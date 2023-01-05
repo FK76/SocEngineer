@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputFragment">
+
+<!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop = "10dp"
+        android:layout_marginLeft = "40dp"
+        android:layout_marginRight = "40dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop = "10dp"
+        android:layout_marginLeft = "40dp"
+        android:layout_marginRight = "40dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="?android:attr/textCheckMark" />
+
+        <EditText
+        android:id="@+id/nameInputEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft = "40dp"
+        android:layout_marginRight = "40dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <EditText
+        android:id="@+id/passwordInputEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Password" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/inputButtonFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input"
+        android:layout_gravity="center"
+        />
+    </LinearLayout>
+</FrameLayout>
